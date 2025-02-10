@@ -1,0 +1,105 @@
+/* Navbar düzenlemeleri */
+.navbar {
+    height: 54px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+body {
+    padding-top: 54px;
+    background-color: #FAFAFA;
+}
+
+.logo {
+    margin-left: 192px;
+}
+
+.search {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+::placeholder {
+    background-image: url('../assets/search-solid.svg');
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.menu {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+/* SM boyutunda menü gizleme */
+@media (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+}
+
+/* İçerik alanı düzenlemeleri */
+.middlearea {
+    max-height: 200px !important;
+}
+
+.col-12 {
+    /* Varsayılan boyut için col-12 */
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Diğer ölçekler için col-6 */
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Hikayeler kısmı */
+.storytext {
+    font-family: -apple-system, system-ui, "Segoe UI";
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+/* İçerik düzenlemeleri */
+.card-header, .card-footer {
+    background-color: white;
+}
+
+.card-header .float-right {
+    float: right;
+}
+
+.postuserfont {
+    border: none;
+}
+
+.bookmark {
+    margin-left: 58.333333%;
+}
+
+.comment {
+    float: right;
+}
+
+/* Sağ panel düzenlemeleri */
+.rightpanel {
+    background-color: white;
+    border: none;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 54px;
+}
+
+.rightpanel .float-right {
+    float: right;
+} 
